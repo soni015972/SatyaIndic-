@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Detector from "../components/Detector";
 import BenchmarkView from "../components/BenchmarkView";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "https://indic-fake-news-api.onrender.com";
 
 // Fallback benchmark data in case backend is starting up
 const DEFAULT_BENCHMARKS = {
