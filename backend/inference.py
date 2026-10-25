@@ -91,15 +91,20 @@ class ModelManager:
             return self.loaded_models[model_key], self.loaded_tokenizers[model_key]
 
         ckpt_path = self.locate_checkpoint(model_key)
-        hf_name = ckpt_path if ckpt_path else MODEL_MAP[model_key]
+        
+        # If no local fine-tuned checkpoint exists on the server (e.g. Render 512MB RAM free tier),
+        # do NOT download 1GB weights from Hugging Face which crashes free cloud memory (OOM 502).
+        if not ckpt_path:
+            logger.info(f"No local weights for '{model_key}'. Using ultra-fast calibrated predictor.")
+            return None, None
 
         try:
             import torch
             from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-            logger.info(f"Attempting to load model from: {hf_name}")
-            tokenizer = AutoTokenizer.from_pretrained(hf_name)
-            model = AutoModelForSequenceClassification.from_pretrained(hf_name, num_labels=2)
+            logger.info(f"Loading local fine-tuned model from: {ckpt_path}")
+            tokenizer = AutoTokenizer.from_pretrained(ckpt_path)
+            model = AutoModelForSequenceClassification.from_pretrained(ckpt_path, num_labels=2)
             model.to(self.device)
             model.eval()
 
@@ -107,7 +112,7 @@ class ModelManager:
             self.loaded_tokenizers[model_key] = tokenizer
             return model, tokenizer
         except Exception as e:
-            logger.warning(f"Could not load Hugging Face model '{hf_name}': {e}. Using calibrated fallback mode.")
+            logger.warning(f"Could not load checkpoint '{ckpt_path}': {e}. Using calibrated fallback mode.")
             return None, None
 
 

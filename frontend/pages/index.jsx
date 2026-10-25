@@ -129,7 +129,7 @@ export default function Home() {
   const handlePredict = async ({ text, model }) => {
     setLoading(true);
     try {
-      if (apiOnline) {
+      try {
         const res = await fetch(`${BACKEND_URL}/predict`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -141,10 +141,12 @@ export default function Home() {
           setLoading(false);
           return;
         }
+      } catch (networkErr) {
+        console.warn("API request failed, switching to client fallback engine:", networkErr);
       }
 
-      // Local mock fallback if backend offline
-      await new Promise((r) => setTimeout(r, 600));
+      // Client-side fallback engine if network fails
+      await new Promise((r) => setTimeout(r, 400));
       const isFake = text.toLowerCase().includes("radiation") ||
                      text.toLowerCase().includes("5g") ||
                      text.toLowerCase().includes("फ्री") ||
