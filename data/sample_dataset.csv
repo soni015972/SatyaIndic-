@@ -1,0 +1,41 @@
+id,text,language,script,label,label_name,source
+1,"विश्व स्वास्थ्य संगठन (WHO) ने कोरोना वायरस के नए वेरिएंट के संबंध में नई गाइडलाइन जारी की हैं। नागरिकों से सतर्क रहने की अपील की गई है।",hindi,devanagari,0,REAL,WHO Press Release
+2,"भारतीय अंतरिक्ष अनुसंधान संगठन (ISRO) ने श्रीहरिकोटा से अपने नए मौसम उपग्रह INSAT-3DS का सफल प्रक्षेपण किया।",hindi,devanagari,0,REAL,ISRO Official
+3,"सुप्रीम कोर्ट ने चुनावी बॉन्ड योजना को असंवैधानिक घोषित करते हुए एसबीआई को सभी विवरण सार्वजनिक करने का आदेश दिया।",hindi,devanagari,0,REAL,Supreme Court of India
+4,"भारतीय रिजर्व बैंक ने अपनी द्विमासिक मौद्रिक नीति समीक्षा में रेपो दर को 6.5 प्रतिशत पर अपरिवर्तित रखने का निर्णय लिया है।",hindi,devanagari,0,REAL,RBI Bulletin
+5,"आयुष मंत्रालय ने योग और आयुर्वेद के वैज्ञानिक प्रमाणों पर आधारित एक नया राष्ट्रीय अनुसंधान पोर्टल लॉन्च किया।",hindi,devanagari,0,REAL,PIB Fact Check
+6,"मौसम विभाग (IMD) ने अगले 48 घंटों में उत्तर भारत के कई राज्यों में तेज बारिश और आंधी की चेतावनी जारी की है।",hindi,devanagari,0,REAL,IMD Official
+7,"सावधान! नासा ने चेतावनी दी है कि कल रात 12 बजे से पृथ्वी पर खतरनाक कॉस्मिक किरणें प्रवेश करेंगी, अपने मोबाइल बंद रखें।",hindi,devanagari,1,FAKE,WhatsApp Viral Forward
+8,"भारत सरकार सभी नागरिकों को फ्री में 239 रुपये का 28 दिन वाला रिचार्ज दे रही है, तुरंत नीचे दिए लिंक पर क्लिक करके क्लेम करें।",hindi,devanagari,1,FAKE,Telegram Scam
+9,"नींबू और बेकिंग सोडा का गर्म पानी में मिश्रण पीने से कैंसर और कोरोना 100% जड़ से खत्म हो जाता है, डॉक्टर इसे छुपाते हैं।",hindi,devanagari,1,FAKE,Social Media Rumor
+10,"आरबीआई ने घोषणा की है कि 500 रुपये के वे सभी नोट अवैध हैं जिनपर हरी पट्टी गांधी जी की तस्वीर के पास नहीं है।",hindi,devanagari,1,FAKE,WhatsApp Rumor
+11,"यूनेस्को ने भारत के राष्ट्रगान जन गण मन को दुनिया का सर्वश्रेष्ठ राष्ट्रगान घोषित किया है। गर्व से शेयर करें।",hindi,devanagari,1,FAKE,Viral Chain Message
+12,"5G मोबाइल टावरों के परीक्षण से निकलने वाली खतरनाक रेडिएशन के कारण पक्षी मर रहे हैं और इंसानों को सांस लेने में दिक्कत हो रही है।",hindi,devanagari,1,FAKE,Facebook Misinformation
+13,"RBI ne monetary policy meeting me repo rate ko unchanged rakhne ka faisla kiya hai. Inflation control me aane tak sthiti bani rahegi.",hinglish,roman,0,REAL,Financial Express
+14,"BCCI ne ICC T20 World Cup 2024 ke liye 15-member Indian squad announce kar di hai. Rohit Sharma team ke captain honge.",hinglish,roman,0,REAL,Cricbuzz News
+15,"Indian Railways ne summer vacation special trains chalane ka announcement kiya hai taaki passengers ko confirm ticket mil sake.",hinglish,roman,0,REAL,Rail Ministry Update
+16,"ISRO ne solar mission Aditya-L1 ka successfully orbit insertion complete kar liya hai, sensors properly kaam kar rahe hain.",hinglish,roman,0,REAL,Science News India
+17,"Ministry of Finance ne income tax returns file karne ki last date 31 July confirm ki hai, koi extension nahi diya jayega.",hinglish,roman,0,REAL,Income Tax Dept
+18,"Breaking news! Government sabhi citizens ko PM Yojna ke under 5000 rupaye bank account me de rahi hai, jaldi link open karo aur apply karo.",hinglish,roman,1,FAKE,WhatsApp Scam
+19,"Doston 5G tower se nikalne wali radiation itni khatarnak hai ki log behosh ho rahe hain, forward this to all your family groups immediately.",hinglish,roman,1,FAKE,Viral Audio Claim
+20,"Patanjali ne aisi nayi medicine banayi hai jisse kidney aur heart disease 3 din me theek ho jati hai bina kisi operation ke.",hinglish,roman,1,FAKE,Health Misinformation
+21,"Supreme Court ne kal se sabhi private schools ki fees 50 percent kam karne ka direct order de diya hai sabhi states ke liye.",hinglish,roman,1,FAKE,Social Media Hoax
+22,"Aaj raat 12 baje ke baad sabhi WhatsApp messages monitor honge aur blue tick ke sath 3 red ticks aane par police arrest karegi.",hinglish,roman,1,FAKE,WhatsApp Chain Hoax
+23,"Ek chammach haldi aur namak ko sarso ke tel me milakar kan me dalne se kisi bhi viral infection se 1 ghante me aaram milta hai.",hinglish,roman,1,FAKE,Alternative Medicine Myth
+24,"The World Health Organization has issued updated clinical guidance for managing seasonal respiratory viral infections in healthcare facilities.",english,latin,0,REAL,WHO Official
+25,"The Indian Space Research Organisation successfully deployed the climate observatory satellite into Sun-synchronous orbit.",english,latin,0,REAL,Spaceflight Now
+26,"The Union Cabinet chaired by the Prime Minister approved an additional outlay for the production linked incentive scheme for semiconductors.",english,latin,0,REAL,PIB Government
+27,"Global stock markets rallied after the Federal Reserve indicated potential interest rate stabilization in upcoming quarterly reviews.",english,latin,0,REAL,Reuters
+28,"NASA confirmed the James Webb Space Telescope detected atmospheric water vapor on an exoplanet orbiting within the habitable zone.",english,latin,0,REAL,NASA Science
+29,"Urgent alert! Drinking boiled garlic water cures pneumonia and prevents all viral infections within 12 hours according to anonymous doctors.",english,latin,1,FAKE,Viral Health Myth
+30,"The United Nations announced a secret decree replacing national fiat currencies with a mandatory central digital credit score starting next week.",english,latin,1,FAKE,Conspiracy Forum
+31,"Government offering free smart laptops to all students who forward this link to at least 15 WhatsApp groups before midnight.",english,latin,1,FAKE,Phishing Link
+32,"5G telecom base stations are directly linked to electromagnetic radiation sickness and oxygen depletion in densely populated metro cities.",english,latin,1,FAKE,Telecom Conspiracy
+33,"Scientists in Switzerland have confirmed that eating raw onions at bedside attracts viruses and completely disinfects hospital rooms overnight.",english,latin,1,FAKE,Folk Medicine Hoax
+34,"केंद्रीय स्वास्थ्य मंत्रालय ने स्पष्ट किया है कि सोशल मीडिया पर चल रही नई महामारी की खबरें भ्रामक और पूर्णतः निराधार हैं।",hindi,devanagari,0,REAL,MoHFW Clarification
+35,"जल जीवन मिशन के तहत देश के 14 करोड़ से अधिक ग्रामीण परिवारों को नल से स्वच्छ जल की आपूर्ति सुनिश्चित की गई है।",hindi,devanagari,0,REAL,Govt Press Briefing
+36,"चमत्कारी बाबा का दावा: इस विशेष भस्म को पानी में घोलकर पीने से बिना इंसुलिन के शुगर लेवल 24 घंटे में सामान्य हो जाएगा।",hindi,devanagari,1,FAKE,Faith Healing Hoax
+37,"TRAI ne sabhi mobile users ke liye free incoming lifetime validity ka naya regulatory rule mandatory kar diya hai.",hinglish,roman,1,FAKE,Telecom Fake Notice
+38,"NEET UG examination ke leaked question paper WhatsApp par circulation me hain, NTA ne clarify kiya ye fabricated claims hain.",hinglish,roman,0,REAL,NTA Clarification
+39,"Researchers at Stanford University have developed an artificial intelligence model capable of early detection of pancreatic neoplasms.",english,latin,0,REAL,Nature Medicine
+40,"NASA has issued an emergency warning that an asteroid collision will blackout all satellite communication across the globe tomorrow.",english,latin,1,FAKE,Doomsday Hoax

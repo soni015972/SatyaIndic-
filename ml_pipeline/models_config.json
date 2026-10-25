@@ -1,0 +1,79 @@
+{
+  "models": {
+    "indic-bert": {
+      "hf_name": "ai4bharat/indic-bert",
+      "display_name": "IndicBERT (AI4Bharat)",
+      "architecture": "ALBERT",
+      "params_millions": 12.0,
+      "supported_scripts": ["Devanagari", "Romanized / Transliterated", "Indic 12 Languages"],
+      "primary_strengths": "Ultra-lightweight parameter sharing (12M params), trained specifically on 12 major Indian languages + English corpus from IndicCorp.",
+      "hyperparameters": {
+        "learning_rate": 3e-5,
+        "batch_size": 16,
+        "max_length": 128,
+        "warmup_ratio": 0.1,
+        "weight_decay": 0.01,
+        "num_train_epochs": 4
+      }
+    },
+    "muril": {
+      "hf_name": "google/muril-base-cased",
+      "display_name": "MuRIL (Google Research)",
+      "architecture": "BERT-Base",
+      "params_millions": 110.0,
+      "supported_scripts": ["Devanagari", "Latin/Romanized", "17 Indian Languages"],
+      "primary_strengths": "Trained with monolingual and translated/transliterated document pairs. Highest empirical performance on Romanized Hinglish code-switching.",
+      "hyperparameters": {
+        "learning_rate": 2e-5,
+        "batch_size": 16,
+        "max_length": 128,
+        "warmup_ratio": 0.1,
+        "weight_decay": 0.01,
+        "num_train_epochs": 4
+      }
+    },
+    "xlm-roberta": {
+      "hf_name": "xlm-roberta-base",
+      "display_name": "XLM-RoBERTa (Meta AI)",
+      "architecture": "RoBERTa-Base",
+      "params_millions": 278.0,
+      "supported_scripts": ["Devanagari", "Latin", "100+ Global Languages"],
+      "primary_strengths": "Massive multilingual pretraining (2.5TB CommonCrawl). Strong cross-lingual transfer, though larger parameter footprint and slower inference.",
+      "hyperparameters": {
+        "learning_rate": 1.5e-5,
+        "batch_size": 16,
+        "max_length": 128,
+        "warmup_ratio": 0.1,
+        "weight_decay": 0.01,
+        "num_train_epochs": 4
+      }
+    },
+    "bert-base-uncased": {
+      "hf_name": "bert-base-uncased",
+      "display_name": "English BERT (Baseline)",
+      "architecture": "BERT-Base",
+      "params_millions": 110.0,
+      "supported_scripts": ["Latin / English Only"],
+      "primary_strengths": "English monolingual baseline to scientifically prove subword fragmentation and high out-of-vocabulary penalty on Devanagari/Hinglish.",
+      "hyperparameters": {
+        "learning_rate": 2e-5,
+        "batch_size": 16,
+        "max_length": 128,
+        "warmup_ratio": 0.1,
+        "weight_decay": 0.01,
+        "num_train_epochs": 4
+      }
+    }
+  },
+  "labels": {
+    "0": "REAL",
+    "1": "FAKE"
+  },
+  "training_defaults": {
+    "seed": 42,
+    "fp16": true,
+    "metric_for_best_model": "macro_f1",
+    "early_stopping_patience": 2,
+    "save_total_limit": 1
+  }
+}
